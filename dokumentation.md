@@ -4,7 +4,9 @@
 Das Programm ist ein einfacher Lärmbelästigungsgeldrechner, der es dem Benutzer ermöglicht, eine Geldstrafe für eine Lärmbelästigung in der Stadt Zürich zu berechnen. Der Benutzer kann auch nach bestimmten Gesetzesartikeln suchen, die sich auf Lärmbelästigung beziehen. Das Programm ist dabei eine Commandline basierende Applikation.
 
 ## 2. Wie wird das Programm bedient?
+
 ![picture of the menu](/img/menu.png)
+
 Das Programm bietet dem Benutzer ein einfaches Menü mit vier Optionen:
 1. **Lärmbelästigungsgeld berechnen**: 
 ![picture of the noise complaint calculator](/img/calculator.png)
