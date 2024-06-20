@@ -8,16 +8,19 @@ Das Programm ist ein einfacher Lärmbelästigungsgeldrechner, der es dem Benutze
 ![picture of the menu](/img/menu.png)
 
 Das Programm bietet dem Benutzer ein einfaches Menü mit vier Optionen:
+
 1. **Lärmbelästigungsgeld berechnen**: 
 
 ![picture of the noise complaint calculator](/img/calculator.png)
 
 Der Benutzer wird aufgefordert, den Lärmpegel in Dezibel, die Dauer der Lärmbelästigung in Stunden, die Tageszeit (Tag oder Nacht) und die Anzahl der vorherigen Verstösse gegen die Lärmbelästigungsgesetze einzugeben. Das Programm berechnet dann die Geldstrafe basierend auf diesen Eingaben und zeigt das Ergebnis an. Die Geldstrafe bezieht sich auf die Stadt Zürich und wird anhand von festgelegten Regeln und approximativen Werten berechnet. Die Strafe kann nicht über 500 CHF betragen in Zürich. Dementsprechend kann es zu Fehlern in der Berechnung kommen, da das Gesetz nicht genau die Bussen festlegt, nur einen Rahmen in dem das Programm sich aufenthält.
+
 2. **Gesetzesartikel suchen**: 
 
 ![picture of the article search](/img/search.png)
 
 Der Benutzer kann ein Schlüsselwort eingeben, nach dem im Text der Gesetzesartikel gesucht werden soll. Das Programm zeigt dann alle Gesetzesartikel an, die das Schlüsselwort enthalten. Das Schlüsselwort wird mittels einer Regex Suche durchgeführt, um auch nach Teilwörtern zu suchen. Dabei werden alle Artikel, die für das Schlüsselwort relevant sind und über Lärmberechtigungen informieren, angezeigt.
+
 3. **Beenden**: 
 
 ![picture of closing the programm](/img/end.png)
