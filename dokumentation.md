@@ -9,23 +9,34 @@ Das Programm ist ein einfacher Lärmbelästigungsgeldrechner, der es dem Benutze
 
 Das Programm bietet dem Benutzer ein einfaches Menü mit vier Optionen:
 1. **Lärmbelästigungsgeld berechnen**: 
+
 ![picture of the noise complaint calculator](/img/calculator.png)
+
 Der Benutzer wird aufgefordert, den Lärmpegel in Dezibel, die Dauer der Lärmbelästigung in Stunden, die Tageszeit (Tag oder Nacht) und die Anzahl der vorherigen Verstösse gegen die Lärmbelästigungsgesetze einzugeben. Das Programm berechnet dann die Geldstrafe basierend auf diesen Eingaben und zeigt das Ergebnis an. Die Geldstrafe bezieht sich auf die Stadt Zürich und wird anhand von festgelegten Regeln und approximativen Werten berechnet. Die Strafe kann nicht über 500 CHF betragen in Zürich. Dementsprechend kann es zu Fehlern in der Berechnung kommen, da das Gesetz nicht genau die Bussen festlegt, nur einen Rahmen in dem das Programm sich aufenthält.
 2. **Gesetzesartikel suchen**: 
+
 ![picture of the article search](/img/search.png)
+
 Der Benutzer kann ein Schlüsselwort eingeben, nach dem im Text der Gesetzesartikel gesucht werden soll. Das Programm zeigt dann alle Gesetzesartikel an, die das Schlüsselwort enthalten. Das Schlüsselwort wird mittels einer Regex Suche durchgeführt, um auch nach Teilwörtern zu suchen. Dabei werden alle Artikel, die für das Schlüsselwort relevant sind und über Lärmberechtigungen informieren, angezeigt.
 3. **Beenden**: 
+
 ![picture of closing the programm](/img/end.png)
+
 Beendet das Programm.
 
 ## 3. Python
 Das Programm ist in Python geschrieben und verwendet einfache Konzepte wie Schleifen, Bedingungen, Benutzereingaben, Funktionen, Dictionaries und reguläre Ausdrücke. Es zeigt auch die Verwendung von Funktionen und Dictionaries in Python. Das Programm ist in verschiedene Funktionen aufgeteilt, um die Lesbarkeit und Wartbarkeit zu verbessern. Die Funktionen sind:
 
 - **`calculateFine()`**: 
+
 ![picture of the method calculateFine()](/img/calculateFine.png)
+
 Diese Funktion berechnet die Geldstrafe für eine Lärmbelästigung basierend auf den Benutzereingaben. Sie berücksichtigt den Lärmpegel, die Dauer der Lärmbelästigung, die Tageszeit (Tag oder Nacht) und die Anzahl der vorherigen Verstösse.
+
 - **`findLegalArticles()`**: 
+
 ![picture of the method findLegalArticles()](/img/findLegalArticles.png)
+
 Diese Funktion sucht nach Gesetzesartikeln, die ein bestimmtes Schlüsselwort enthalten. Sie verwendet reguläre Ausdrücke, um nach Teilwörtern zu suchen und relevante Gesetzesartikel zu finden.
 
 Das Programm verwendet auch ein Dictionary, um die Gesetzesartikel und ihre Definitionen zu speichern. Die Verwendung von regulären Ausdrücken ermöglicht es dem Benutzer, nach Teilwörtern zu suchen, um relevante Gesetzesartikel zu finden.
